@@ -1,6 +1,6 @@
 package com.example.gson
 
-val response ="{\n" +
+const val response ="{\n" +
         "\"id\": \"6212577f0095c22f40b1a78a\",\n" +
         "\"email\": \"fields_tyson@manglo.degree\",\n" +
         "\"roles\": [\n" +
