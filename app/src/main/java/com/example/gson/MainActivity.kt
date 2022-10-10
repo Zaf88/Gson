@@ -27,16 +27,6 @@ class MainActivity : AppCompatActivity() {
         })
 
         //objects to String Json
-        val resultJsonString =gson.toJson(JsonObject().apply {
-            addProperty("id", resultObject.id)
-            addProperty("email", resultObject.email)
-            addProperty("roles", gson.toJson((resultObject.roles)))
-            addProperty("apiKey", resultObject.apiKey)
-            addProperty("profile", profileJsonString)
-            addProperty("username", resultObject.username)
-            addProperty("createdAt", resultObject.createdAt)
-            addProperty("updatedAt", resultObject.updatedAt)
-        })
-        Log.e("LOG =>", resultJsonString)
-    }
-}
+        val resultJsonString =gson.toJson(resultObject)
+
+        Log.e("LOG =>", resultJsonString)}}
